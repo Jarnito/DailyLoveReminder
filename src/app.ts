@@ -1,9 +1,19 @@
-const API_BASE_URL = 'http://localhost:3000';
+const API_BASE_URL = window.location.hostname === 'localhost' 
+? 'http://localhost:3000'
+: 'https://dailylovereminder-backend.onrender.com';
 
 async function displayLoveMessage() {
     try {
         console.log('Fetching love message...'); // Debug log
-        const response = await fetch(`${API_BASE_URL}/api/love-message`)
+        const response = await fetch(`${API_BASE_URL}/api/love-message`, {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
         const data = await response.json();
         console.log('Love message received:', data.message); // Debug log
 
