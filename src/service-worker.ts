@@ -2,13 +2,13 @@
 
 const CACHE_NAME = 'ily-v1';
 const urlsToCache: string[] = [
-    '/ily/',
-    '/ily/index.html',
-    '/ily/styles.css',
-    '/ily/dist/app.js',
-    '/ily/icon-192x192.png',
-    '/ily/icon-512x512.png',
-    '/ily/manifest.json',
+    './',
+    'index.html',
+    'styles.css',
+    'dist/app.js',
+    'icon-192x192.png',
+    'icon-512x512.png',
+    'manifest.json',
 ];
 
 (self as ServiceWorkerGlobalScope).addEventListener('install', (event: ExtendableEvent) => {
