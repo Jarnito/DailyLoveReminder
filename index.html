@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ff69b4">
+    <meta name="description" content="Daily Love Reminder">
+    <title>Daily Love Reminder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon-192x192.png">
+</head>
+<body>
+    <div id="container">
+        <div id="top-container">
+            <div class="heart">♥</div>
+            <div id="smalltitle">#DailyLoveReminder</div>
+            <div class="heart">♥</div>
+        </div>
+        <div id="loveMessage">Your love message will appear here!</div>
+        <img id="image" alt="Love picture" style="display:none;">
+    </div>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('dist/service-worker.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful');
+                    })
+                    .catch(error => {
+                        console.log('ServiceWorker registration failed:', error);
+                    });
+            });
+        }
+    </script>
+    
+    <!-- Load our compiled JavaScript files -->
+    <script src="dist/app.js"></script>
+</body>
+</html>
