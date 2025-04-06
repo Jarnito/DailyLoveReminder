@@ -24,8 +24,8 @@
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/DailyLoveReminder/service-worker.js', {
-                scope: '/DailyLoveReminder/'
+                navigator.serviceWorker.register('dist/service-worker.js', {
+                    scope: './'
                 })
                     .then(registration => {
                         console.log('ServiceWorker registration successful');

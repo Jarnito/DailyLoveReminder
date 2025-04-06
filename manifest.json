@@ -2,7 +2,7 @@
     "name": "DailyLoveReminder",
     "short_name": "LoveReminder",
     "description": "Daily love messages for Justine",
-    "start_url": "/ily/",
+    "start_url": "./",
     "display": "standalone",
     "background_color": "#f0f0f0",
     "theme_color": "#ff69b4",
