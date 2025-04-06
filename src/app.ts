@@ -1,7 +1,9 @@
+const API_BASE_URL = 'http://localhost:3000';
+
 async function displayLoveMessage() {
     try {
         console.log('Fetching love message...'); // Debug log
-        const response = await fetch('http://localhost:3000/api/love-message');
+        const response = await fetch(`${API_BASE_URL}/api/love-message`)
         const data = await response.json();
         console.log('Love message received:', data.message); // Debug log
 
@@ -17,7 +19,7 @@ async function displayLoveMessage() {
         }
 
         if (imageElement && data.image) {
-            imageElement.src = `http://localhost:3000/images/${data.image}`
+            imageElement.src = `${API_BASE_URL}/images/${data.image}`
             imageElement.style.display = 'block';
             console.log('Image displayed successfully'); // Debug log
         } else {
