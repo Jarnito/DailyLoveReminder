@@ -2,19 +2,19 @@
     "name": "DailyLoveReminder",
     "short_name": "LoveReminder",
     "description": "Daily love messages for Justine",
-    "start_url": "./",
+    "start_url": "/DailyLoveReminder/",
     "display": "standalone",
     "background_color": "#f0f0f0",
     "theme_color": "#ff69b4",
     "icons": [
         {
-            "src": "icon-192x192.png",
+            "src": "/DailyLoveReminder/icon-192x192.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "any maskable"
           },
           {
-            "src": "icon-512x512.png",
+            "src": "/DailyLoveReminder/icon-512x512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "any maskable"
