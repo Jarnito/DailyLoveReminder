@@ -5,15 +5,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 20px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
     background-color: #f0f0f0;
     font-family: Roboto, sans-serif;
+    box-sizing: border-box;
 }
 
 #container {
     position: relative;
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     margin: auto;
     text-align: center;
     padding: 20px;
