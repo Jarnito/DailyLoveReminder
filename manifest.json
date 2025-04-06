@@ -5,7 +5,7 @@
     "start_url": "/DailyLoveReminder/",
     "display": "standalone",
     "background_color": "#f0f0f0",
-    "theme_color": "#ff69b4",
+    "theme_color": "#f0f0f0",
     "icons": [
         {
             "src": "/DailyLoveReminder/icon-192x192.png",
